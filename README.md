@@ -1,5 +1,7 @@
 # CC2-projects
+
 1-H, Tamayo, Dynah M.
+
 TITLE: USERPASS
 
 package userinput;
@@ -28,6 +30,12 @@ public class UserPass {
      
     }
 }
+
+# CC2-projects
+
+1-H, Tamayo, Dynah M.
+
+TITLE: CALCULATOR
 
 public class Calculator {
 
@@ -63,6 +71,11 @@ public class Calculator {
     }
 }
 
+# CC2-projects
+
+1-H, Tamayo, Dynah M.
+
+TITLE: COURSE
 
 import java.util.*;
 
@@ -109,7 +122,11 @@ public class NestedIf {
     }   
 }
 
+# CC2-projects
 
+1-H, Tamayo, Dynah M.
+
+TITLE: GUESSING GAME
 
 package repetitivestructures;
 
@@ -179,7 +196,11 @@ public class GuessingNumber {
     }
 }
 
+# CC2-projects
 
+1-H, Tamayo, Dynah M.
+
+TITLE: ODD AND EVEN
 
 package userinput;
 
@@ -228,6 +249,12 @@ public class Array {
     } 
 }
 
+# CC2-projects
+
+1-H, Tamayo, Dynah M.
+
+TITLE: MULTIDIMENTIONAL ARRAY
+
 package array;
 
 import java.util.*;
@@ -262,6 +289,11 @@ public class TwoDArrayUserInput {
     }
 }
 
+# CC2-projects
+
+1-H, Tamayo, Dynah M.
+
+TITLE: FIBONACCI
 
 package fibonacci;
 
@@ -305,6 +337,12 @@ public class Fibonacci {
             System.out.println("");
         }
     }//end of display
+
+# CC2-projects
+
+1-H, Tamayo, Dynah M.
+
+TITLE: SORTING ALGORITHM
 
 package mergesort;
 
