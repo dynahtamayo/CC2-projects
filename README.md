@@ -27,6 +27,39 @@ public class UserPass {
     }
 }
 
+public class Calculator {
+    public static void main (String [] args) {
+     
+        Scanner sc = new Scanner(System.in);
+        System.out.println ("Enter the first number: ");
+        int a = sc.nextInt();
+        System.out.println ("Enter the second number: ");
+        int b = sc.nextInt();
+        
+        System.out.println ("What arithmetic operation to be used(add, subtract, multiply, divide, modulo): ");
+        String c = sc.next();                
+        
+        int sum, diff, prod, quo, mod;
+        sum = a + b;
+        diff = a - b;
+        prod = a * b;
+        quo = a / b;
+        mod = a % b;
+        
+        if (c.equals("add")){
+            System.out.println ( "Sum is: "+ sum);
+        } else if (c.equals("subtract")){
+            System.out.println ( "Difference is: "+ diff);
+        }else if (c.equals("multiply")){
+            System.out.println ( "Product is: "+ prod);
+        } else if (c.equals("divide")){
+             System.out.println ( "Quotient is: "+ quo);
+        } else if (c.equals("modulo")){
+             System.out.println ( "Modulo is: "+ mod);
+        }
+    }
+}
+
 
 package repetitivestructures;
 
@@ -100,38 +133,6 @@ package userinput;
 
 import java.util.*;
 
-public class Calculator {
-    public static void main (String [] args) {
-     
-        Scanner sc = new Scanner(System.in);
-        System.out.println ("Enter the first number: ");
-        int a = sc.nextInt();
-        System.out.println ("Enter the second number: ");
-        int b = sc.nextInt();
-        
-        System.out.println ("What arithmetic operation to be used(add, subtract, multiply, divide, modulo): ");
-        String c = sc.next();                
-        
-        int sum, diff, prod, quo, mod;
-        sum = a + b;
-        diff = a - b;
-        prod = a * b;
-        quo = a / b;
-        mod = a % b;
-        
-        if (c.equals("add")){
-            System.out.println ( "Sum is: "+ sum);
-        } else if (c.equals("subtract")){
-            System.out.println ( "Difference is: "+ diff);
-        }else if (c.equals("multiply")){
-            System.out.println ( "Product is: "+ prod);
-        } else if (c.equals("divide")){
-             System.out.println ( "Quotient is: "+ quo);
-        } else if (c.equals("modulo")){
-             System.out.println ( "Modulo is: "+ mod);
-        }
-    }
-}
 
 package array;
 
