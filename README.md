@@ -6,6 +6,7 @@ package userinput;
 import java.util.*;
 
 public class UserPass {
+
     public static void main (String [] args) {
        
         Scanner sc = new Scanner(System.in);
@@ -28,6 +29,7 @@ public class UserPass {
 }
 
 public class Calculator {
+
     public static void main (String [] args) {
      
         Scanner sc = new Scanner(System.in);
@@ -64,6 +66,7 @@ public class Calculator {
 import java.util.*;
 
 public class NestedIf {
+
     public static void main (String [] args){
 
         Scanner sc = new Scanner (System.in);
@@ -112,7 +115,9 @@ package repetitivestructures;
 import java.util.*;
 
 public class GuessingNumber {
+
     public static void main (String [] args){
+    
         Scanner sc = new Scanner (System.in);
         
         System.out.println("Enter a number from 0 - 1000:");
@@ -183,7 +188,9 @@ import java.util.*;
 package array;
 
 import java.util.ArrayList;
+
 public class Array {
+
     public static void main(String[] args) {
 
         int[] elements  = {3,9,15,20,65,23,18,4,2,14,21};
@@ -225,7 +232,9 @@ package array;
 import java.util.*;
 
 public class TwoDArrayUserInput {
+
     public static void main (String [] args ){
+    
         Scanner sc = new Scanner (System.in);
         
         System.out.println("Enter number of rows:");
@@ -258,7 +267,9 @@ package fibonacci;
 import java.util.*;
 
 public class Fibonacci {
+
     static long num;
+    
     public static void main(String[] args) {
         
         input();
