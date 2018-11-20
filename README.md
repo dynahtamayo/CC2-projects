@@ -431,13 +431,17 @@ import java.util.*;
 public class FactFib {
         
     static int i;
+    
     static int x[];
+    
     public static void main(String[] args) {
         
         user();
         
         }//end of main class
+        
     static void user(){
+        
         Scanner hi = new Scanner (System.in);
         System.out.println("What do you want to get? Factorial or Fibonacci?");
         String a = hi.nextLine();
@@ -462,7 +466,9 @@ public class FactFib {
             display2 (x);
         }
         }
+        
     static void display1 (int [] x){
+    
         for (int i = 0; i<x.length; i++){
             System.out.print ("f (" + x[i] + ")" + "\t");  
         }System.out.println("");
