@@ -419,3 +419,80 @@ public class MergeSort {
         System.arraycopy(second, iSecond, result, iMerged, second.length - iSecond);
     }
 }
+
+# CC2-projects
+
+1-H, Tamayo, Dynah M.
+
+TITLE: FACTORIAL OR FIBONACCI ARRAY
+
+package factorialfibonacci;
+
+import java.util.*;
+
+public class FactFib {
+        
+        static int i;
+        static int x[];
+        public static void main(String[] args) {
+        
+        Scanner hi = new Scanner (System.in);
+        System.out.println("What do you want to get? Factorial or Fibonacci?");
+        String a = hi.nextLine();
+        
+        System.out.println("Enter the size of array:");
+        int b = hi.nextInt();
+        
+        int [] x = new int [b];
+                
+        System.out.println("Enter elements:");
+        for (int i=0; i<b; i++){
+            System.out.print("index " + i + ": ");
+            x [i] = hi.nextInt();    
+        }System.out.println("  ");
+        
+
+        if (a.equalsIgnoreCase("factorial")){
+           display1 (x);
+
+        }else if (a.equalsIgnoreCase("fibonacci")){
+            display2 (x);
+        }
+        }//end of main class
+        
+        static void display1 (int [] x){
+            for (int i = 0; i<x.length; i++){
+                System.out.print ("f (" + x[i] + ")" + "\t");  
+            }System.out.println("");
+            for (int i = 0; i<x.length; i++){
+                System.out.print(fact(x[i]) + "\t");
+            }System.out.println("");
+        }//end of 1
+        
+        static void display2 (int [] x){
+             for (int i = 0; i<x.length; i++){
+                System.out.print ("f (" + x[i] + ")" + "\t");  
+              
+            }System.out.println("");
+            for (int i = 0; i<x.length; i++){
+                System.out.print(fib(x[i]) + "\t");
+            }System.out.println("");
+        }//end of 2
+        
+        static int fact(int i) {
+        if (i<=1){
+            return 1;
+        }else{
+            return i*fact(i-1);
+        }
+        }//end of fact
+    
+        static int fib (int i){
+        if (i<=1){
+            return i;           
+        }else{
+            return fib(i-1)+fib(i-2);
+        }
+        }//end of fib
+        
+}
