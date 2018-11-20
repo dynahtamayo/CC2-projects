@@ -422,7 +422,7 @@ package fibonacci;
  
  1-H, Tamayo, Dynah M.
  
- TITLE: FACTORIAL OR FIBONACCI ARRAY
+ TITLE: FINAL ACTIVITY
 
 package factorialfibonacci;
 
