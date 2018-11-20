@@ -446,6 +446,7 @@ public class FactFib {
         int [] x = new int [b];
                 
         System.out.println("Enter elements:");
+        
         for (int i=0; i<b; i++){
             System.out.print("index " + i + ": ");
             x [i] = hi.nextInt();    
@@ -464,6 +465,7 @@ public class FactFib {
             for (int i = 0; i<x.length; i++){
                 System.out.print ("f (" + x[i] + ")" + "\t");  
             }System.out.println("");
+            
             for (int i = 0; i<x.length; i++){
                 System.out.print(fact(x[i]) + "\t");
             }System.out.println("");
@@ -472,8 +474,8 @@ public class FactFib {
         static void display2 (int [] x){
              for (int i = 0; i<x.length; i++){
                 System.out.print ("f (" + x[i] + ")" + "\t");  
-              
             }System.out.println("");
+            
             for (int i = 0; i<x.length; i++){
                 System.out.print(fib(x[i]) + "\t");
             }System.out.println("");
