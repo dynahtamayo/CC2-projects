@@ -1,0 +1,50 @@
+
+CC2-projects
+1-H, Tamayo, Dynah M.
+
+TITLE: COURSE
+
+import java.util.*;
+
+public class NestedIf {
+
+public static void main (String [] args){
+
+    Scanner sc = new Scanner (System.in);
+    System.out.println("What is your course?");
+    String course = sc.nextLine();
+    
+    if (course.equalsIgnoreCase("BSIT")){
+        System.out.println("What is your major?(NetSec, WebTech, ERP)");
+        String major = sc.nextLine();
+        if (major.equalsIgnoreCase("NetSec")){
+            System.out.println("Your course is BSIT-NetSec");
+        }
+        else if (major.equalsIgnoreCase("WebTech")){
+            System.out.println("Your course is BSIT-WebTech");
+        }
+        else if (major.equalsIgnoreCase("ERP")){
+            System.out.println("Your course is BSIT-ERP");
+        }
+    }
+    else if (course.equalsIgnoreCase("BSCS")){
+        System.out.println("What is your major?(WebDev, Digital Arts, Animation)");
+        String major = sc.nextLine();
+        if (major.equalsIgnoreCase("WebDev")){
+            System.out.println("Your course is BSCS-WebDev");
+        }
+        else if (major.equalsIgnoreCase("Digital Arts")){
+            System.out.println("Your course is BSCS-Digital Arts");
+        }
+        else if (major.equalsIgnoreCase("Animation")){
+            System.out.println("Your course is BSCS-Animation");
+        }
+    }
+    else if (course.equalsIgnoreCase("BSDA")){
+        System.out.println("Your course is BSDA");
+    }
+    else{
+        System.out.println("Invalid");
+    }
+}   
+}
