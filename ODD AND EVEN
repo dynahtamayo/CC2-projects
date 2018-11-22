@@ -1,0 +1,51 @@
+
+CC2-projects
+1-H, Tamayo, Dynah M.
+
+TITLE: ODD AND EVEN
+
+package userinput;
+
+import java.util.*;
+
+package array;
+
+import java.util.ArrayList;
+
+public class Array {
+
+public static void main(String[] args) {
+
+    int[] elements  = {3,9,15,20,65,23,18,4,2,14,21};
+
+    System.out.print("Array={");
+    for (int i : elements){
+    System.out.print( i + " ");
+    }
+    System.out.println("}");
+    
+    ArrayList odd  = new ArrayList ();
+    ArrayList even  = new ArrayList ();       
+    System.out.println("Even\tOdd");
+    
+    
+    for (int i = 0; i<elements.length; i++){
+        if (elements [i]%2==0){
+            even.add(elements[i]);
+        }
+        else{
+            odd.add(elements[i]);
+        }
+    }
+    
+    for (int i = 0; i<elements.length; i++){
+        if (i>= even.size() && i < odd.size()){
+            System.out.println("\t" + odd.get(i));
+        }else if (i>= odd.size() && i < even.size()){
+            System.out.println("\t" + even.get(i));
+        }else if (i< even.size() && i < odd.size()){
+            System.out.println(even.get(i)+ "\t"+odd.get(i));
+        }
+    }
+} 
+}
