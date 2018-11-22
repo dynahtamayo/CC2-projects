@@ -1,0 +1,211 @@
+
+CC2-projects
+1-H, Tamayo, Dynah M.
+
+TITLE: FIBONACCI
+
+package fibonacci;
+
+import java.util.*;
+
+public class Fibonacci { static long num;
+
+public static void main(String[] args) {
+    
+    input();
+    fib (num);
+    display();
+    //display2();
+}//end of main method
+
+static void input(){
+    Scanner hi = new Scanner (System.in);
+    System.out.println("Enter a number for fibonacci:");
+    num = hi.nextLong();
+}//end of input
+
+static long fib (long num){
+    if (num<=1){
+        return num;           
+    }else{
+        return fib(num-1)+fib(num-2);
+    }
+}//end of fib
+
+static void display(){
+    for (int x = 0; x<= num; x++){
+        System.out.print("f("+ x + ")" + "\t" );   
+    }System.out.println("");
+    
+    for (int a = 0; a <= num; a++){
+        for (int b = 0; b<=a; b++ ){
+        System.out.print(fib(b)+ "\t");
+        }
+        System.out.println("");
+    }
+}//end of display
+CC2-projects
+1-H, Tamayo, Dynah M.
+
+TITLE: SORTING ALGORITHM
+
+package mergesort;
+
+import java.util.*;
+
+public class MergeSort {
+
+ public static void main(String[] args) {
+   
+     //Unsorted array
+    Integer[] a = { 2, 6, 3, 5, 1 };
+     
+    //Call merge sort
+    mergeSort(a);
+     
+    //Check the output which is sorted array
+    System.out.println(Arrays.toString(a));
+}
+
+@SuppressWarnings("rawtypes")
+public static Comparable[] mergeSort(Comparable[] list)
+{
+    //If list is empty; no need to do anything
+    if (list.length <= 1) {
+        return list;
+    }
+     
+    //Split the array in half in two parts
+    Comparable[] first = new Comparable[list.length / 2];
+    Comparable[] second = new Comparable[list.length - first.length];
+    System.arraycopy(list, 0, first, 0, first.length);
+    System.arraycopy(list, first.length, second, 0, second.length);
+     
+    //Sort each half recursively
+    mergeSort(first);
+    mergeSort(second);
+     
+    //Merge both halves together, overwriting to original array
+    merge(first, second, list);
+    return list;
+}
+ 
+@SuppressWarnings({ "rawtypes", "unchecked" })
+private static void merge(Comparable[] first, Comparable[] second, Comparable[] result)
+{
+    //Index Position in first array - starting with first element
+    int iFirst = 0;
+     
+    //Index Position in second array - starting with first element
+    int iSecond = 0;
+     
+    //Index Position in merged array - starting with first position
+    int iMerged = 0;
+     
+    //Compare elements at iFirst and iSecond,
+    //and move smaller element at iMerged
+    while (iFirst < first.length && iSecond < second.length)
+    {
+        if (first[iFirst].compareTo(second[iSecond]) < 0)
+        {
+            result[iMerged] = first[iFirst];
+            iFirst++;
+        }
+        else
+        {
+            result[iMerged] = second[iSecond];
+            iSecond++;
+        }
+        iMerged++;
+    }
+    //copy remaining elements from both halves - each half will have already sorted elements
+    System.arraycopy(first, iFirst, result, iMerged, first.length - iFirst);
+    System.arraycopy(second, iSecond, result, iMerged, second.length - iSecond);
+}
+}
+
+CC2-projects
+1-H, Tamayo, Dynah M.
+
+TITLE: FINAL ACTIVITY
+
+package factorialfibonacci;
+
+import java.util.*;
+
+public class FactFib {
+
+static int i;
+
+static int x[];
+
+public static void main(String[] args) {
+    
+    user();
+    
+    }//end of main class
+    
+static void user(){
+    
+    Scanner hi = new Scanner (System.in);
+    System.out.println("What do you want to get? Factorial or Fibonacci?");
+    String a = hi.nextLine();
+    
+    System.out.println("Enter the size of array:");
+    int b = hi.nextInt();
+    
+    int [] x = new int [b];
+            
+    System.out.println("Enter elements:");
+    
+    for (int i=0; i<b; i++){
+        System.out.print("index " + i + ": ");
+        x [i] = hi.nextInt();    
+    }System.out.println("  ");
+    
+
+    if (a.equalsIgnoreCase("factorial")){
+       display1 (x);
+    }
+    else if (a.equalsIgnoreCase("fibonacci")){
+        display2 (x);
+    }
+    }
+    
+static void display1 (int [] x){
+
+    for (int i = 0; i<x.length; i++){
+        System.out.print ("f (" + x[i] + ")" + "\t");  
+    }System.out.println("");
+        
+    for (int i = 0; i<x.length; i++){
+        System.out.print(fact(x[i]) + "\t");
+    }System.out.println("");
+}//end of 1
+    
+static void display2 (int [] x){
+    for (int i = 0; i<x.length; i++){
+        System.out.print ("f (" + x[i] + ")" + "\t");   
+    }System.out.println("");
+        
+    for (int i = 0; i<x.length; i++){
+        System.out.print(fib(x[i]) + "\t");
+    }System.out.println("");
+}//end of 2
+    
+static int fact(int i) {
+    if (i<=1){
+        return 1;
+    }else{
+        return i*fact(i-1);
+    }
+}//end of fact
+
+static int fib (int i){
+    if (i<=1){
+        return i;           
+    }else{
+        return fib(i-1)+fib(i-2);
+    }
+}//end of fib      
+}
