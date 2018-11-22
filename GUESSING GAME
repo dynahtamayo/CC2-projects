@@ -1,0 +1,73 @@
+
+CC2-projects
+1-H, Tamayo, Dynah M.
+
+TITLE: GUESSING GAME
+
+package repetitivestructures;
+
+import java.util.*;
+
+public class GuessingNumber {
+
+public static void main (String [] args){
+
+    Scanner sc = new Scanner (System.in);
+    
+    System.out.println("Enter a number from 0 - 1000:");
+    int a = sc.nextInt(); 
+    
+    if (a>1000){
+        System.out.println("Invalid.");
+    }else if (a<0){
+        System.out.println("Invalid");
+    }else{
+    
+    
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();                                                                              
+    System.out.println();
+    System.out.println();  
+    System.out.println();                                                                              
+    System.out.println();
+    System.out.println(); 
+    System.out.println();
+    System.out.println();    
+    
+    System.out.println("Guess a number from 0 - 1000:");
+    int guess = sc.nextInt();
+    
+    if (guess>1000){
+        System.out.println("Invalid.");
+    }else if (guess<0){
+        System.out.println("Invalid");
+    }else{
+        do{
+            if (a%2==0){
+            System.out.println("Hint:The number is an even number.");
+            guess = sc.nextInt();
+            }else{
+            System.out.println("Hint:The number is an odd number.");
+            guess = sc.nextInt();
+            }if (guess < a){
+                System.out.println("Hint:The number is higher.");
+                guess = sc.nextInt();
+            }else if (guess > a){
+                System.out.println("Hint:The number is lower");
+                guess = sc.nextInt();
+            }
+        }while (guess!=a);
+            System.out.println("You have guessed the correct number.");
+           System.out.println("Congratulations!");
+        }
+    }
+}
+}
